@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mahnoor Atif</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mahnoor Atif</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="imgs/mypic.jpeg" alt="Mahnoor Atif profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mahnoor</h1>
+            <p class="section__text__p2">UX & Digital Content Specialist with Web Development Skills</p>
+            <div class="btn-container">
+                <a href="doc/Digital_Marketing_Resume.pdf" target="_blank" class="btn btn-color-2">
+                    Download CV
+                </a>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+
+
+            </div>
+            <div id="socials-container">
+                <img src="imgs/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://linkedin.com/'" />
+                <img src="imgs/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <!-- <img
+            src="imgs/mypic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          /> -->
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="imgs/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>Entry Level<br />Digital Marketing & Web Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="imgs/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p><a href="doc/Mahnoor_Atif_Degree_Certificate.pdf" target="_blank">BSc.hons in Computing with
+                                Software Development | Technology University of Dublin</a><br />
+                            <a href="doc/Digital Marketing Diploma.pdf" target="_blank">Post Graduate Diploma in Digital
+                                Marketing | South East Technology University </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a passionate and dedicated UX & Digital Content Specialist with a strong background in web
+                        development. With a keen eye for design and a deep understanding of user experience principles,
+                        I strive to create engaging and intuitive digital experiences. My expertise lies in crafting
+                        compelling content and designing user-centric interfaces that drive meaningful interactions. I
+                        am committed to delivering innovative solutions that not only meet but exceed user expectations,
+                        making me a valuable asset in the ever-evolving digital landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="imgs/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" /> -->
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="imgs/project-1.jpeg" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Freelance Web & Content Developer</h2>
+                    <p>Developed responsive websites and engaging content for client using tools like wordpress,
+                        Hostinger and hostingIreland.ie</p>
+                    <br />
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://skillsetcontractors.ie/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="imgs/Project-2.jpg" alt="Project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Final Year Project </h2>
+                    <p>Developed a patient blood test record management web application for hospital staff. The
+                        application helped streamline the process of managing patient blood-test records and improved
+                        overall efficiency. The system allowed users to create accounts, log in, and upload CSV/Excel
+                        files to manage patient test data through a responsive and easy-to-use interface.</p>
+                    <br />
+                    <br />
+                    <br />
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/TUDublin/code-and-docs-mahnooratif12'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <!-- <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="imgs/project-3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <p></p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- <img src="imgs/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" /> -->
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container experience-card">
+                    <h2>Freelance Web & Content Developer | Present</h2>
+                    <p class="underline"
+                        onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';">
+                        <strong> More </strong>
+                    </p>
+                    <div class="experience-info">
+                        <p>As a freelance web and content developer, I have successfully delivered projects for various
+                            clients,
+                            including small businesses and startups. My responsibilities include designing and
+                            developing
+                            websites, creating engaging content, and optimizing digital presence to enhance user
+                            experience
+                            and
+                            drive traffic. I have a proven track record of meeting client expectations and delivering
+                            high-quality work within deadlines. Tools I use include HTML, CSS, JavaScript, WordPress,
+                            Canva,
+                            and
+                            various content management systems.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="details-container experience-card">
+                    <h2 class="experience-sub-title">Hindas Technology | Intern Web & Media Support| Nov 2025 - Present</h2>
+                    <p class="underline"
+                        onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';">
+                        <strong> More </strong>
+                    </p>
+                    <div class="experience-info">
+                        <p>During my time at Hindas Technology, I contributed to website and digital media tasks by
+                            designing video content for webpages and assisting with visual updates. I also wrote small
+                            programs to strengthen my programming foundation and improve my technical skills. This
+                            experience helped me develop both creative and technical abilities while working in a
+                            collaborative environment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="details-container experience-card">
+                    <h2 class="experience-sub-title">Dell Technology | Intern UX/UI Designer | Jan 2023 - Aug 2023</h2>
+                    <p class="underline"
+                        onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';">
+                        <strong> More </strong>
+                    </p>
+                    <div class="experience-info">
+                        <p>During my internship at Dell Technologies, I worked in a collaborative professional
+                            environment
+                            supporting web and digital-related tasks. I contributed to improving usability and
+                            functionality
+                            across internal platforms while gaining hands-on experience working with cross-functional
+                            teams.
+                            The role strengthened my problem-solving, communication, and technical skills, while giving
+                            me
+                            insight into real-world digital and technology workflows.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+    </section>
+
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Web Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>WordPress</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Responsive Design</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git & GitHub</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Digital Marketing & Content</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Content Creation</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Social Media Content</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Content Strategy</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Basic SEO</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Digital Campaign Planning</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Audience Engagement</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">UX & UI Design</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>User Research</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Wireframing</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Usability Principles</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Content Structuring</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Responsive UI Design</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Visual Hierarchy</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Canva</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>WordPress</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>GitHUub</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>MS Office</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="imgs/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Google Analytics</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="imgs/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:mahnur.atif@gmail.com">mahnur.atif@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="imgs/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Mahnoor Atif. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
