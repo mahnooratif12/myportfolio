@@ -42,7 +42,7 @@ nav {
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 a {
@@ -150,10 +150,10 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  min-height: 96vh;
-  height: auto;
+  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
+  min-height: fit-content;
 }
 
 .section-container {
@@ -295,13 +295,12 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  width: 100%;
-  min-width: 280px;
+  flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: left;
+  text-align: center;
 }
 
 .section-container {
@@ -316,6 +315,40 @@ section {
 }
 
 /* EXPERIENCE SECTION */
+
+.experience-card {
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-5px);
+}
+.experience-card h2,
+.experience-card p {
+  color: inherit;
+}
+
+.experience-info {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.experience-card:hover .experience-info {
+  opacity: 1;
+  max-height: 300px;
+  margin-top: 1rem;
+}
+
+.underline {
+  color:lightskyblue;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  text-decoration-color: black;
+}
 
 #experience {
   position: relative;
@@ -332,51 +365,6 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.experience-info {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.4s ease;
-}
-
-.experience-card:hover .experience-info {
-  opacity: 1;
-  max-height: 300px;
-  margin-top: 1rem;
-}
-
-.experience-card {
-  transition: transform 0.3s ease;
-}
-
-.experience-card:hover {
-  transform: translateY(-5px);
-}
-
-
-.underline {
-  text-decoration: underline;
-  text-decoration-thickness: 0.1rem;
-  text-underline-offset: 0.5rem;
-  text-decoration-color: rgb(181, 181, 181);
-  
-  cursor: pointer;
-}
-.experience-card {
-  transition: all 0.3s ease;
-}
-
-.experience-card:hover {
-  background-color: black;
-  color: white;
-  transform: translateY(-5px);
-}
-
-.experience-card h2,
-.experience-card p {
-  color: inherit;
 }
 
 .article-container {
